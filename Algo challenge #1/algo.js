@@ -4,8 +4,9 @@
  */
 
 //  GLOBAL SCOPE VARIABLE ACCESIBLE THROUGHOUT OUT ENTIRE DOCUMENT 
-const romanKey = {
+ const romanKey = {
 
+// HERE WE KEEP TRACK OF WHAT EACH LETETR IN A ROMAN NUMERAL MEANS SO OUR LOOP CAN REFRENCE 
     I : 1,
     V : 5,
     X : 10,
@@ -13,10 +14,14 @@ const romanKey = {
     C : 100,
     D : 100,
     M : 1000
+
  }
 var romanToInt = function(s) {
+
+    // THIS VARIABLE KEEPS TRACK OF THE VALUE OF THE ROMAN NUMERAL PASSED 
     let romanInt = 0
 
+    // LOOP TAHT STARTS AT 0 AND ENDS AT s length 
     for(let I = 0; I <s.length; I++){
         if (s[I] === 'I' && s[I + 1] === "V"){
             romanInt += 4
@@ -36,20 +41,21 @@ var romanToInt = function(s) {
             romanInt += 400
             I++}
 
-        else if (s[I] === 'C' && s[I]=== 'M'){
+        else if (s[I] === 'C' && s[I + 1]=== 'M'){
             romanInt += 900
             I++}
     
+        // IF EVERTHING ABOVE IS FALSE DO THIS
         else {romanInt += romanKey[s[I]]
     
         }
 
-    }
-    return romanInt
+}
+        // RETURN THIS SO WE CAN KEEP TRACK OF IT 
+        return romanInt
 
-    // GIVEN A ROMAN NUMERAL 
-    // CONERT THAT NUMERAL INTO AN INTEGER 
+ 
     
 };
 
-console.log(romanToInt('III'))
+console.log(romanToInt('XXVII'))
