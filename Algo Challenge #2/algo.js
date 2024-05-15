@@ -1,17 +1,18 @@
 var longestCommonPrefix = function(strs) {
 
-    // prefixesLetters = {
-    //     f = "f",
-    //     l = "l"
-    // }
+    prefixesLetters = {
+        f : "f",
+        l : "l"
+    }
 
     I = 0;
     for(let I  = 0; I < strs.length; I++){
     
         // return I
         
+        console.log(I)
+
     }
-    console.log(I)
 
     // const flPrefix = {
     // "fl"
