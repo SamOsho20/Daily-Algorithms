@@ -1,5 +1,5 @@
 // SIMPLE ALGO CHALLENGES WITH JS
-
+// May 22
 // 1.
 var X= 1
 
