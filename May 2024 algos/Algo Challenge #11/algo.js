@@ -21,3 +21,16 @@ function a(b,c){
 console.log(a(1,a(2,3)))
 
 // OUTPUT ---> 6
+
+// 3.
+for (var i = 1; 1<=20; i++){
+
+    if (i > 5){
+        break
+    }
+
+    else{
+        console.log('hello')
+    }
+}
+// OUTPUT ----> hello,hello,hello,hello,hello
